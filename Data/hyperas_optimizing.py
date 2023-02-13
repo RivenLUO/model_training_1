@@ -179,7 +179,7 @@ callbacks = [keras.callbacks.EarlyStopping(monitor="val_loss", patience=5), ]
 search_history = tuner.search(
     x_train,
     y_train,
-    batch_size=64,
+    batch_size=8,
     epochs=50,
     validation_data=(x_val, y_val),
     callbacks=callbacks,
